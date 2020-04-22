@@ -1,0 +1,5 @@
+name: 'Node Test'
+description: 'Go node!'
+runs:
+  using: 'node12'
+  main: 'index.js'
