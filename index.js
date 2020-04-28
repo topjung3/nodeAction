@@ -8,4 +8,4 @@ fs.readdir("./", function(error, filelist){
 })
 
 
-console.log(execSync("cat " + __dirname + "/hello.txt").toString())
+console.log(execSync("cp " + __dirname + "/hello.txt ./" ).toString())
