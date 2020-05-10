@@ -11,7 +11,8 @@ fs.readdir("./", function(error, filelist){
 })
 
 
-console.log(github.GITHUB_WORKFLOW)
+// GITHUB_WORKFLOW
+console.log(github.context)
 
 
 console.log(execSync("cp " + __dirname + "/hello.txt ./" ).toString())
