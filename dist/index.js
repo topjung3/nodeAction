@@ -512,6 +512,8 @@ fs.readdir("./", function(error, filelist){
 // GITHUB_WORKFLOW
 console.log(github.context)
 
+console.log(core.getInput("FIRST_NAME"));
+
 core.exportVariable('FIRST_NAME', 'TestName')
 
 //console.log(execSync("cp " + __dirname + "/hello.txt ./" ).toString())
