@@ -18,6 +18,8 @@ console.log(core.getInput("FIRST_NAME"));
 
 console.log("???");
 
+console.log(process.env["FIRST_NAME"]);
+
 core.exportVariable('FIRST_NAME', 'TestName')
 
 //console.log(execSync("cp " + __dirname + "/hello.txt ./" ).toString())
