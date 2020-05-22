@@ -502,25 +502,19 @@ const github = __webpack_require__(469);
 
 var fs = __webpack_require__(747);
 
-console.log(process.cwd())
-
-fs.readdir("./", function(error, filelist){
-  console.log(filelist);
-})
-
+console.log("cwd: " + process.cwd())
 
 // GITHUB_WORKFLOW
+console.log("github.context");
 console.log(github.context)
 
-console.log(core.getInput("FIRST_NAME"));
+console.log("variables");
+console.log("VAR1: " + core.getInput("VAR1"));
 
-console.log("???");
+console.log("env");
+console.log(process.env);
 
-console.log(process.env["FIRST_NAME"]);
-console.log(process.env["HOME"]);
-core.exportVariable('FIRST_NAME', 'TestName')
-
-//console.log(execSync("cp " + __dirname + "/hello.txt ./" ).toString())
+core.exportVariable('RESULT', 'node result')
 
 
 /***/ }),
