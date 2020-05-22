@@ -517,7 +517,7 @@ console.log(core.getInput("FIRST_NAME"));
 console.log("???");
 
 console.log(process.env["FIRST_NAME"]);
-
+console.log(process.env["HOME"]);
 core.exportVariable('FIRST_NAME', 'TestName')
 
 //console.log(execSync("cp " + __dirname + "/hello.txt ./" ).toString())
