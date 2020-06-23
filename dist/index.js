@@ -515,7 +515,7 @@ console.log("env");
 console.log(process.env);
 
 core.exportVariable('RESULT', 'node result');
-core.exportVariable('jsonExample', '{"a":"1","b":{"a":"2","b":"3"},"c":[{"a":"4"}]}');
+core.setOutput('jsonExample', '{"a":"1","b":{"a":"2","b":"3"},"c":[{"a":"4"}]}');
 
 
 /***/ }),
