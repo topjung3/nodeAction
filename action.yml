@@ -3,3 +3,6 @@ description: 'Go node!'
 runs:
   using: 'node12'
   main: 'dist/index.js'
+outputs:
+  jsonExample:
+    description: test
