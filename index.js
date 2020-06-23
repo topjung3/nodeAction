@@ -16,4 +16,5 @@ console.log("VAR1: " + core.getInput("VAR1"));
 console.log("env");
 console.log(process.env);
 
-core.exportVariable('RESULT', 'node result')
+core.exportVariable('RESULT', 'node result');
+core.exportVaraible('jsonExample', '{a: 1, b: {a: 2, b: 3}, c: [{a: 4}]}');
